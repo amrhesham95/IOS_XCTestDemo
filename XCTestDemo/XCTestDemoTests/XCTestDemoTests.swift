@@ -23,9 +23,9 @@ class XCTestDemoTests: XCTestCase {
         let playData = PlayData()
         let numberOfWords = 384001
 //        XCTAssertEqual(playData.allWords.count, numberOfWords, "allWords was not equal to \(numberOfWords)")
-        XCTAssertEqual(playData.wordCounts["home"], 174, "Home does not appear 174 times")
-        XCTAssertEqual(playData.wordCounts["fun"], 4, "Fun does not appear 4 times")
-        XCTAssertEqual(playData.wordCounts["mortal"], 41, "Mortal does not appear 41 times")
+        XCTAssertEqual(playData.wordCounts.count(for: "home"), 174, "Home does not appear 174 times")
+        XCTAssertEqual(playData.wordCounts.count(for: "fun"), 4, "Fun does not appear 4 times")
+        XCTAssertEqual(playData.wordCounts.count(for: "mortal"), 41, "Mortal does not appear 41 times")
 
 
 

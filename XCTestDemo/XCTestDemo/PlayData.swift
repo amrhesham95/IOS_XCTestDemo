@@ -9,7 +9,7 @@
 import Foundation
 class PlayData {
     var allWords = [String]()
-    var wordCounts = [String: Int]()
+    var wordCounts: NSCountedSet!
 
     
     init() {
@@ -20,13 +20,15 @@ class PlayData {
                 allWords = allWords.filter({
                     $0 != ""
                 })
+                wordCounts = NSCountedSet(array: allWords)
+                allWords = wordCounts.allObjects as! [String]
+
                 
-                for word in allWords{
-                    wordCounts[word, default:0] += 1
-                }
-                
-                allWords = Array(wordCounts.keys)
-            }
+    
         }
+        
     }
+    
+    }
+    
 }
