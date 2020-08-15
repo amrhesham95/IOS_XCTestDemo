@@ -15,6 +15,8 @@
 		EF875BF124E82D7B006CF0C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF875BEF24E82D7B006CF0C9 /* LaunchScreen.storyboard */; };
 		EF875BFC24E82D7B006CF0C9 /* XCTestDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF875BFB24E82D7B006CF0C9 /* XCTestDemoTests.swift */; };
 		EF875C0724E82D7B006CF0C9 /* XCTestDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF875C0624E82D7B006CF0C9 /* XCTestDemoUITests.swift */; };
+		EF875C1524E82DC9006CF0C9 /* plays.txt in Resources */ = {isa = PBXBuildFile; fileRef = EF875C1424E82DC9006CF0C9 /* plays.txt */; };
+		EF875C1724E82EDF006CF0C9 /* PlayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF875C1624E82EDF006CF0C9 /* PlayData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		EF875C0224E82D7B006CF0C9 /* XCTestDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCTestDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF875C0624E82D7B006CF0C9 /* XCTestDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestDemoUITests.swift; sourceTree = "<group>"; };
 		EF875C0824E82D7B006CF0C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF875C1424E82DC9006CF0C9 /* plays.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plays.txt; sourceTree = "<group>"; };
+		EF875C1624E82EDF006CF0C9 /* PlayData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				EF875BED24E82D7B006CF0C9 /* Assets.xcassets */,
 				EF875BEF24E82D7B006CF0C9 /* LaunchScreen.storyboard */,
 				EF875BF224E82D7B006CF0C9 /* Info.plist */,
+				EF875C1424E82DC9006CF0C9 /* plays.txt */,
+				EF875C1624E82EDF006CF0C9 /* PlayData.swift */,
 			);
 			path = XCTestDemo;
 			sourceTree = "<group>";
@@ -232,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF875C1524E82DC9006CF0C9 /* plays.txt in Resources */,
 				EF875BF124E82D7B006CF0C9 /* LaunchScreen.storyboard in Resources */,
 				EF875BEE24E82D7B006CF0C9 /* Assets.xcassets in Resources */,
 				EF875BEC24E82D7A006CF0C9 /* Main.storyboard in Resources */,
@@ -260,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF875BE924E82D7A006CF0C9 /* ViewController.swift in Sources */,
+				EF875C1724E82EDF006CF0C9 /* PlayData.swift in Sources */,
 				EF875BE524E82D7A006CF0C9 /* AppDelegate.swift in Sources */,
 				EF875BE724E82D7A006CF0C9 /* SceneDelegate.swift in Sources */,
 			);
