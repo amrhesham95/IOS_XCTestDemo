@@ -12,6 +12,7 @@ class XCTestDemoUITests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        XCUIApplication().activate()
 
         // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
@@ -25,9 +26,26 @@ class XCTestDemoUITests: XCTestCase {
 
     func testInitialStateIsCorrect() {
           //because we made the app start with filter search "Swift" which should appear 7 times so there should be 7 cells
-        XCUIApplication().activate()
         let table = XCUIApplication().tables
         XCTAssertEqual(table.cells.count, 7, "There should be 7 rows initially")
+    }
+    
+    func testUserFilteringByString() {
+        
+        let app = XCUIApplication()
+        app.navigationBars["Shakespear's plays"].buttons["Search"].tap()
+        
+        let filterAlert = app.alerts
+        
+        let textField = filterAlert.textFields.element
+        
+       textField.typeText("test")
+        
+        filterAlert.buttons["Filter"].tap()
+
+        
+        XCTAssertEqual(app.tables.cells.count, 56, "There should be 56 words matching 'test'")
+        
     }
 
     
