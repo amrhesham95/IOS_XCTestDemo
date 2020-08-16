@@ -1,5 +1,5 @@
 # Shakespear's Plays Search
-## an application that lets you search all Shakespear's comdies with specific word to find how many time did Shakespear used that word
+## an application that lets you search all Shakespeare's comdies with specific word to find how many time did Shakespeare use that word
  
 ### Topics Covered:
  * Unit testing
